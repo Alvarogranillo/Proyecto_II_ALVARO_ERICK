@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="481.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.reporteController">
+   <children>
+        <ComboBox fx:id="reportecliente" layoutX="15.0" layoutY="33.0" prefWidth="90.0" promptText="choose"/>
+        <Label id="reporteclientelabel" layoutX="15.0" layoutY="10.0" styleClass="bold-label" text="Reporte de clientes" />
+      <TableView fx:id="tblclienteindividual" layoutX="89.0" layoutY="105" prefHeight="92.0" prefWidth="398.0">
+        <columns>
+          <TableColumn fx:id="cold" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colnombre" prefWidth="150.0" text="Nombre" />
+            <TableColumn fx:id="coldpi" minWidth="0.0" prefWidth="146.0" text="DPI" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblempresa" layoutX="90.0" layoutY="225" prefHeight="106.0" prefWidth="398.0">
+        <columns>
+          <TableColumn fx:id="txtid2" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="txtnombre2" prefWidth="146.0" text="Nombre" />
+            <TableColumn fx:id="txtdpi2" prefWidth="138.0" text="DPI" />
+        </columns>
+      </TableView>
+      <Label fx:id="eti" layoutX="262.0" layoutY="85" text="Individual" />
+      <Label fx:id="ete" layoutX="262.0" layoutY="210" text="Empresa" />
+   </children>
+</AnchorPane>
+
+
+
+
